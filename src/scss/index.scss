@@ -60,20 +60,22 @@ html, body
 
 	.phone
 	{
-		font-size: 0.8em;
 		letter-spacing: 0.03em;
 		font-weight: 300;
 		margin-top: 36px;
+		font-size: 1.2em;
 
 		text-align: center;
 
 		@media (min-width: 990px)
 		{
+			font-size: 0.8em;
 			text-align: right;
 			float: right;
 			color: $c-white;
 			background: url('../img/header_phoneIcon.png') no-repeat;
-			padding: 6px 0 5px 30px;;
+			padding: 6px 0 5px 30px;
+
 			span
 			{
 				color: $c-yellow;
@@ -345,9 +347,16 @@ html, body
 
 	.stores
 	{
-		position: absolute;
-		right: 0;
-		top: 150px;
+		text-align: center;
+		padding-top: 150px;
+
+		@media (min-width: 990px)
+		{
+			padding-top: 0;
+			position: absolute;
+			right: 0;
+			top: 150px;
+		}
 
 		ul
 		{
@@ -358,14 +367,19 @@ html, body
 			li
 			{
 				display: inline-block;
-				float: left;
-				border-left: 1px solid $c-white;
 				padding-left: 10px;
 				margin-left: 30px;
+				text-align: left;
+
+				@media (min-width: 990px)
+				{
+					float: left;
+					border-left: 1px solid $c-white;
+				}
 
 				.title
 				{
-					font-size: 0.95em;
+					font-size: 1em;
 					color: $c-yellow;
 					font-weight: 600;
 					letter-spacing: 0.07em;
@@ -375,9 +389,9 @@ html, body
 
 				.address
 				{
-					margin-top: 15px;
+					margin-top: 12px;
 					color: $c-white;
-					font-size: 0.65em;
+					font-size: 0.9em;
 					letter-spacing: 0.1em;
 					padding-left: 20px;
 

@@ -388,13 +388,14 @@ html, body {
         display: inline-block;
         margin-top: 25px; } }
   #header .phone {
-    font-size: 0.8em;
     letter-spacing: 0.03em;
     font-weight: 300;
     margin-top: 36px;
+    font-size: 1.2em;
     text-align: center; }
     @media (min-width: 990px) {
       #header .phone {
+        font-size: 0.8em;
         text-align: right;
         float: right;
         color: #ffffff;
@@ -549,30 +550,38 @@ html, body {
       #footer .logo {
         display: block; } }
   #footer .stores {
-    position: absolute;
-    right: 0;
-    top: 150px; }
+    text-align: center;
+    padding-top: 150px; }
+    @media (min-width: 990px) {
+      #footer .stores {
+        padding-top: 0;
+        position: absolute;
+        right: 0;
+        top: 150px; } }
     #footer .stores ul {
       list-style: none;
       margin: 0;
       padding: 0; }
       #footer .stores ul li {
         display: inline-block;
-        float: left;
-        border-left: 1px solid #ffffff;
         padding-left: 10px;
-        margin-left: 30px; }
+        margin-left: 30px;
+        text-align: left; }
+        @media (min-width: 990px) {
+          #footer .stores ul li {
+            float: left;
+            border-left: 1px solid #ffffff; } }
         #footer .stores ul li .title {
-          font-size: 0.95em;
+          font-size: 1em;
           color: #ffef00;
           font-weight: 600;
           letter-spacing: 0.07em;
           background: url("../img/footer_detail.png") no-repeat left;
           padding-left: 20px; }
         #footer .stores ul li .address {
-          margin-top: 15px;
+          margin-top: 12px;
           color: #ffffff;
-          font-size: 0.65em;
+          font-size: 0.9em;
           letter-spacing: 0.1em;
           padding-left: 20px; }
           #footer .stores ul li .address span {
