@@ -58,7 +58,8 @@ html, body
 
 	}
 
-	.phone
+	.phone,
+	.whatsapp
 	{
 		letter-spacing: 0.03em;
 		font-weight: 300;
@@ -73,15 +74,62 @@ html, body
 			text-align: right;
 			float: right;
 			color: $c-white;
-			background: url('../img/header_phoneIcon.png') no-repeat;
-			padding: 6px 0 5px 30px;
 
 			span
 			{
 				color: $c-yellow;
 			}
 		}
+	}
 
+	.phone
+	{
+		.mobile
+		{
+			display: inline-block;
+
+			@media (min-width: 990px)
+			{
+				display: none;
+			}
+		}
+
+		@media (min-width: 990px)
+		{
+			background: url('../img/header_phoneIcon.png') no-repeat;
+			padding: 6px 0 5px 30px;
+		}
+
+	}
+
+	.whatsapp
+	{
+		float: right;
+		margin-top: 32px;
+		margin-right: 10px;
+
+		display: none;
+
+		@media (min-width: 990px)
+		{
+			display: block;
+		}
+
+		div
+		{
+			display: inline-block;
+		}
+
+		svg
+		{
+			fill: $c-yellow;
+			height: 36px;
+		}
+
+		& *
+		{
+			vertical-align: middle;
+		}
 	}
 }
 

@@ -387,22 +387,47 @@ html, body {
       #header .logo {
         display: inline-block;
         margin-top: 25px; } }
-  #header .phone {
+  #header .phone,
+  #header .whatsapp {
     letter-spacing: 0.03em;
     font-weight: 300;
     margin-top: 36px;
     font-size: 1.2em;
     text-align: center; }
     @media (min-width: 990px) {
-      #header .phone {
+      #header .phone,
+      #header .whatsapp {
         font-size: 0.8em;
         text-align: right;
         float: right;
-        color: #ffffff;
-        background: url("../img/header_phoneIcon.png") no-repeat;
-        padding: 6px 0 5px 30px; }
-        #header .phone span {
+        color: #ffffff; }
+        #header .phone span,
+        #header .whatsapp span {
           color: #ffef00; } }
+  #header .phone .mobile {
+    display: inline-block; }
+    @media (min-width: 990px) {
+      #header .phone .mobile {
+        display: none; } }
+  @media (min-width: 990px) {
+    #header .phone {
+      background: url("../img/header_phoneIcon.png") no-repeat;
+      padding: 6px 0 5px 30px; } }
+  #header .whatsapp {
+    float: right;
+    margin-top: 32px;
+    margin-right: 10px;
+    display: none; }
+    @media (min-width: 990px) {
+      #header .whatsapp {
+        display: block; } }
+    #header .whatsapp div {
+      display: inline-block; }
+    #header .whatsapp svg {
+      fill: #ffef00;
+      height: 36px; }
+    #header .whatsapp * {
+      vertical-align: middle; }
 
 @media (min-width: 990px) {
   #content {
